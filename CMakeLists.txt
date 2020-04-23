@@ -19,10 +19,3 @@ add_subdirectory(${CMAKE_BINARY_DIR}/../3rdparty/$ENV{GOOGLE_TEST_DIR})
 add_subdirectory(B)
 add_subdirectory(C)
 
-
-INSTALL(
-    TARGETS C ClassLib
-    RUNTIME DESTINATION exe/bin
-    LIBRARY DESTINATION exe/lib
-)
-

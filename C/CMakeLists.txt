@@ -11,3 +11,9 @@ add_executable(C main.cpp)
 
 target_link_libraries(C ClassLib)
 target_include_directories(C PRIVATE ${Task4_SOURCE_DIR})
+
+INSTALL(
+    TARGETS C
+    RUNTIME DESTINATION exe/bin
+    LIBRARY DESTINATION exe/lib
+)
